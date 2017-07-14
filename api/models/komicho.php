@@ -6,7 +6,7 @@ class modelKomicho extends model
 {
     public function __construct ()
     {
-        $this->db = $this->db();
+        // $this->db = $this->db();
     }
     public function name ()
     {
