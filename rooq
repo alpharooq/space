@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+define('NAMESCRIPT', 'space');
+
+$input_array = $argv;
+
+$vendor = 'vendor/autoload.php';
+if (file_exists($vendor)) {
+    require_once $vendor;
+} else {
+    die('composer update');
+}
+
+use alpharooq\kernel\space\cli;
+
+$obj = new cli;
+
+$func = $input_array[1];
+
+$data = array_slice($input_array, 2);
+
+$obj->$func($data);

@@ -1,0 +1,13 @@
+{
+    "name": "alpharooq/space",
+    "description": "Alpharooq space system create APIs by php",
+    "require": {
+        "alpharooq/orm": "^1.0",
+        "alpharooq/kernel": "^1.0"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "php rooq init"
+        ]
+    }
+}
